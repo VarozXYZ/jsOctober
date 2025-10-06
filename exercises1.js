@@ -51,7 +51,7 @@ console.log(clasificarEdad(10)); // Debería mostrar: 'Niño'
 console.log(clasificarEdad(15)); // Debería mostrar: 'Adolescente'
 console.log(clasificarEdad(30)); // Debería mostrar: 'Adulto'
 console.log(clasificarEdad(70)); // Debería mostrar: 'Adulto mayor'
-*/
+
 console.log("\nEjercicio 4: switch");
 // Escribe una función llamada 'obtenerColor' que reciba un número del 1 al 3 y devuelva: 1 → 'Rojo', 2 → 'Verde', 3 → 'Azul', otro → 'Color desconocido'
 
@@ -68,9 +68,13 @@ function obtenerColor(num) {
 console.log(obtenerColor(1)); // Debería mostrar: 'Rojo'
 console.log(obtenerColor(3)); // Debería mostrar: 'Azul'
 console.log(obtenerColor(5)); // Debería mostrar: 'Color desconocido'
-
+*/
 console.log("\nEjercicio 5: Condicional ternario");
 // Escribe una función llamada 'esPositivo' que reciba un número y devuelva 'Positivo' si ≥0, 'Negativo' si <0
+
+const esPositivo = num => {
+    return num >= 0 ? "Positivo" : "Negativo"
+}
 // Datos de prueba:
 console.log(esPositivo(5));  // Debería mostrar: 'Positivo'
 console.log(esPositivo(-3)); // Debería mostrar: 'Negativo'
