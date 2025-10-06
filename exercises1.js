@@ -125,7 +125,7 @@ function sumarPares(num) {
 
 // Datos de prueba:
 console.log(sumarPares(10)); // Debería mostrar: 30
-*/
+
 console.log("\nEjercicio 9: Bucle while");
 // Escribe una función llamada 'contarImpares' que cuente de 1 hasta n solo los números impares
 
@@ -140,9 +140,20 @@ function contarImpares(num) {
 // Datos de prueba:
 contarImpares(10);
 // Debería imprimir: 1 3 5 7 9
-
+*/
 console.log("\nEjercicio 10: Bucle do-while");
 // Escribe una función llamada 'pedirContraseña' que simule pedir contraseña hasta que sea 'admin' usando un array de intentos
+
+function pedirContraseña(intentos) {
+    let contraseña = "admin";
+    let i = 1;
+    do {
+        console.log(`Intento ${i}: ${intentos[i-1]}`);
+        i++;
+    } while (intentos[i-2] != contraseña);
+    console.log('Contraseña correcta!');
+}
+
 // Datos de prueba:
 const intentos = ['1234', 'qwerty', 'admin'];
 pedirContraseña(intentos);
