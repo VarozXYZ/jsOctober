@@ -192,7 +192,7 @@ function factorial(num) {
 
 // Datos de prueba:
 console.log(factorial(5)); // Debería mostrar: 120
-*/
+
 // ------------------------------
 // forEach y map
 // ------------------------------
@@ -203,12 +203,14 @@ console.log("\nEjercicio 13: forEach básico");
 const numeros = [1, 2, 3, 4, 5];
 numeros.forEach(num => console.log(num**2));
 // Debería imprimir: 1 4 9 16 25
-
+*/
 console.log("\nEjercicio 14: forEach con índice");
 // Utiliza forEach para imprimir cada nombre del array 'nombres' con su índice
 // Datos de prueba:
 const nombres = ['Ana', 'Juan', 'María'];
-
+nombres.forEach((n, i) => {
+    console.log(`${i}. ${n}`);
+}) 
 // Debería imprimir:
 // Nombre en índice 0: Ana
 // Nombre en índice 1: Juan
