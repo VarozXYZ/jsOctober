@@ -90,7 +90,7 @@ const puedeVotar = (edad, nacionalidad) => {
 console.log(puedeVotar(20, 'sí'));  // Debería mostrar: true
 console.log(puedeVotar(16, 'sí'));  // Debería mostrar: false
 console.log(puedeVotar(25, 'no'));  // Debería mostrar: false
-*/
+
 // ------------------------------
 // BUCLES
 // ------------------------------
@@ -109,9 +109,20 @@ function imprimirPares() {
 // Datos de prueba:
 imprimirPares();
 // Debería imprimir: 2 4 6 8 10 12 14 16 18 20
-
+*/
 console.log("\nEjercicio 8: Bucle for (suma)");
 // Escribe una función llamada 'sumarPares' que sume todos los números pares hasta n
+
+function sumarPares(num) {
+    let suma = 0;
+    for (let i = 1; i <= num; i++) {
+        if (i % 2 === 0) {
+            suma += i;
+        }
+    }
+    return suma;
+}
+
 // Datos de prueba:
 console.log(sumarPares(10)); // Debería mostrar: 30
 
