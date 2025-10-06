@@ -176,7 +176,7 @@ const multiplicarArray = arr => {
 
 // Datos de prueba:
 console.log(multiplicarArray([1, 2, 3, 4])); // Debería mostrar: 24
-*/
+
 console.log("\nEjercicio 12: Bucle while (factorial)");
 // Escribe una función llamada 'factorial' que reciba un número n y devuelva su factorial usando while
 
@@ -192,7 +192,7 @@ function factorial(num) {
 
 // Datos de prueba:
 console.log(factorial(5)); // Debería mostrar: 120
-
+*/
 // ------------------------------
 // forEach y map
 // ------------------------------
@@ -201,14 +201,14 @@ console.log("\nEjercicio 13: forEach básico");
 // Utiliza forEach para imprimir cada número del array 'numeros' al cuadrado
 // Datos de prueba:
 const numeros = [1, 2, 3, 4, 5];
-numeros.forEach(n => console.log(n*n));
+numeros.forEach(num => console.log(num**2));
 // Debería imprimir: 1 4 9 16 25
 
 console.log("\nEjercicio 14: forEach con índice");
 // Utiliza forEach para imprimir cada nombre del array 'nombres' con su índice
 // Datos de prueba:
 const nombres = ['Ana', 'Juan', 'María'];
-nombres.forEach((nombre,i) => console.log(`Nombre en índice ${i}: ${nombre}`));
+
 // Debería imprimir:
 // Nombre en índice 0: Ana
 // Nombre en índice 1: Juan
@@ -221,7 +221,7 @@ const empleados = [
   { nombre: 'Luis', salario: 1200 },
   { nombre: 'Eva', salario: 1500 },
 ];
-empleados.forEach(e => console.log(`${e.nombre} gana ${e.salario} euros`));
+
 // Debería imprimir:
 // Luis gana 1200 euros
 // Eva gana 1500 euros
