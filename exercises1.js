@@ -140,7 +140,7 @@ function contarImpares(num) {
 // Datos de prueba:
 contarImpares(10);
 // Debería imprimir: 1 3 5 7 9
-*/
+
 console.log("\nEjercicio 10: Bucle do-while");
 // Escribe una función llamada 'pedirContraseña' que simule pedir contraseña hasta que sea 'admin' usando un array de intentos
 
@@ -162,9 +162,18 @@ pedirContraseña(intentos);
 // Intento 2: qwerty
 // Intento 3: admin
 // ¡Contraseña correcta!
-
+*/
 console.log("\nEjercicio 11: Bucle for (array)");
 // Escribe una función llamada 'multiplicarArray' que reciba un array de números y devuelva el producto de todos ellos
+
+const multiplicarArray = arr => {
+    let resultado = 1;
+    arr.forEach(n => {
+        resultado *= n
+    })
+    return resultado;
+}
+
 // Datos de prueba:
 console.log(multiplicarArray([1, 2, 3, 4])); // Debería mostrar: 24
 
