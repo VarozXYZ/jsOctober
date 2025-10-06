@@ -20,6 +20,9 @@ console.log(esAdultoMayor(50)); // Debería mostrar: false
 console.log("\nEjercicio 2: if-else");
 // Escribe una función llamada 'verificarTemperatura' que reciba una temperatura (°C) y devuelva 'Hace calor' si es ≥30, 'Hace frío' si es <30.
 
+const verificarTemperatura = temp => {
+  return temp >= 30 ? "Hace calor" : "Hace frío";
+}
 
 // Datos de prueba:
 console.log(verificarTemperatura(32)); // Debería mostrar: 'Hace calor'
