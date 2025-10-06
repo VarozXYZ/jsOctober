@@ -10,12 +10,17 @@
 
 console.log("Ejercicio 1: if simple");
 // Escribe una función llamada 'esAdultoMayor' que reciba una edad y devuelva true si es mayor de 65, false en caso contrario.
+
+const esAdultoMayor = edad => { return edad > 65}
+
 // Datos de prueba:
 console.log(esAdultoMayor(70)); // Debería mostrar: true
 console.log(esAdultoMayor(50)); // Debería mostrar: false
 
 console.log("\nEjercicio 2: if-else");
 // Escribe una función llamada 'verificarTemperatura' que reciba una temperatura (°C) y devuelva 'Hace calor' si es ≥30, 'Hace frío' si es <30.
+
+
 // Datos de prueba:
 console.log(verificarTemperatura(32)); // Debería mostrar: 'Hace calor'
 console.log(verificarTemperatura(20)); // Debería mostrar: 'Hace frío'
