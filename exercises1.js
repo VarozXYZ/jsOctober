@@ -78,7 +78,7 @@ const esPositivo = num => {
 // Datos de prueba:
 console.log(esPositivo(5));  // Debería mostrar: 'Positivo'
 console.log(esPositivo(-3)); // Debería mostrar: 'Negativo'
-*/
+
 console.log("\nEjercicio 6: Combinación de condicionales");
 // Escribe una función llamada 'puedeVotar' que reciba edad y nacionalidad ('sí' o 'no') y devuelva true si edad ≥18 y nacionalidad 'sí', false en caso contrario
 
@@ -90,13 +90,22 @@ const puedeVotar = (edad, nacionalidad) => {
 console.log(puedeVotar(20, 'sí'));  // Debería mostrar: true
 console.log(puedeVotar(16, 'sí'));  // Debería mostrar: false
 console.log(puedeVotar(25, 'no'));  // Debería mostrar: false
-
+*/
 // ------------------------------
 // BUCLES
 // ------------------------------
 
 console.log("\nEjercicio 7: Bucle for");
 // Escribe una función llamada 'imprimirPares' que imprima los números pares del 2 al 20.
+
+function imprimirPares() {
+    for (let i = 1; i < 20; i++) {
+        if (i % 2 === 0) {
+            console.log(i);
+        }
+    }
+}
+
 // Datos de prueba:
 imprimirPares();
 // Debería imprimir: 2 4 6 8 10 12 14 16 18 20
