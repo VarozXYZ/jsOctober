@@ -109,7 +109,7 @@ function imprimirPares() {
 // Datos de prueba:
 imprimirPares();
 // Debería imprimir: 2 4 6 8 10 12 14 16 18 20
-*/
+
 console.log("\nEjercicio 8: Bucle for (suma)");
 // Escribe una función llamada 'sumarPares' que sume todos los números pares hasta n
 
@@ -125,9 +125,18 @@ function sumarPares(num) {
 
 // Datos de prueba:
 console.log(sumarPares(10)); // Debería mostrar: 30
-
+*/
 console.log("\nEjercicio 9: Bucle while");
 // Escribe una función llamada 'contarImpares' que cuente de 1 hasta n solo los números impares
+
+function contarImpares(num) {
+    for (let i = 1; i <= num; i++) {
+        if (i % 2 != 0) {
+            console.log(i);
+        }
+    }
+}
+
 // Datos de prueba:
 contarImpares(10);
 // Debería imprimir: 1 3 5 7 9
