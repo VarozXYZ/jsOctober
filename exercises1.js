@@ -162,7 +162,7 @@ pedirContraseña(intentos);
 // Intento 2: qwerty
 // Intento 3: admin
 // ¡Contraseña correcta!
-*/
+
 console.log("\nEjercicio 11: Bucle for (array)");
 // Escribe una función llamada 'multiplicarArray' que reciba un array de números y devuelva el producto de todos ellos
 
@@ -176,9 +176,20 @@ const multiplicarArray = arr => {
 
 // Datos de prueba:
 console.log(multiplicarArray([1, 2, 3, 4])); // Debería mostrar: 24
-
+*/
 console.log("\nEjercicio 12: Bucle while (factorial)");
 // Escribe una función llamada 'factorial' que reciba un número n y devuelva su factorial usando while
+
+function factorial(num) {
+    let factorial = 1;
+    let i = num;
+    while (i > 0) {
+        factorial *= i;
+        i--;
+    }
+    return factorial;
+}
+
 // Datos de prueba:
 console.log(factorial(5)); // Debería mostrar: 120
 
