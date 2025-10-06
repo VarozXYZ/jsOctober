@@ -68,7 +68,7 @@ function obtenerColor(num) {
 console.log(obtenerColor(1)); // Debería mostrar: 'Rojo'
 console.log(obtenerColor(3)); // Debería mostrar: 'Azul'
 console.log(obtenerColor(5)); // Debería mostrar: 'Color desconocido'
-*/
+
 console.log("\nEjercicio 5: Condicional ternario");
 // Escribe una función llamada 'esPositivo' que reciba un número y devuelva 'Positivo' si ≥0, 'Negativo' si <0
 
@@ -78,9 +78,14 @@ const esPositivo = num => {
 // Datos de prueba:
 console.log(esPositivo(5));  // Debería mostrar: 'Positivo'
 console.log(esPositivo(-3)); // Debería mostrar: 'Negativo'
-
+*/
 console.log("\nEjercicio 6: Combinación de condicionales");
 // Escribe una función llamada 'puedeVotar' que reciba edad y nacionalidad ('sí' o 'no') y devuelva true si edad ≥18 y nacionalidad 'sí', false en caso contrario
+
+const puedeVotar = (edad, nacionalidad) => {
+    return edad >= 18 && nacionalidad === "sí";
+}
+
 // Datos de prueba:
 console.log(puedeVotar(20, 'sí'));  // Debería mostrar: true
 console.log(puedeVotar(16, 'sí'));  // Debería mostrar: false
