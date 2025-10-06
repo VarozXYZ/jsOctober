@@ -1,3 +1,5 @@
+/*
+
 // Ejercicios de estructuras de control, bucles, funciones y forEach y map
 
 // ==============================
@@ -49,9 +51,19 @@ console.log(clasificarEdad(10)); // Debería mostrar: 'Niño'
 console.log(clasificarEdad(15)); // Debería mostrar: 'Adolescente'
 console.log(clasificarEdad(30)); // Debería mostrar: 'Adulto'
 console.log(clasificarEdad(70)); // Debería mostrar: 'Adulto mayor'
-
+*/
 console.log("\nEjercicio 4: switch");
 // Escribe una función llamada 'obtenerColor' que reciba un número del 1 al 3 y devuelva: 1 → 'Rojo', 2 → 'Verde', 3 → 'Azul', otro → 'Color desconocido'
+
+function obtenerColor(num) {
+    switch(num) {
+        case 1: return "Rojo";
+        case 2: return "Verde";
+        case 3: return "Azul";
+        default: return "Color desconocido"
+    }
+
+}
 // Datos de prueba:
 console.log(obtenerColor(1)); // Debería mostrar: 'Rojo'
 console.log(obtenerColor(3)); // Debería mostrar: 'Azul'
