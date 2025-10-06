@@ -31,6 +31,19 @@ console.log(verificarTemperatura(20)); // Debería mostrar: 'Hace frío'
 console.log("\nEjercicio 3: if-else if");
 // Escribe una función llamada 'clasificarEdad' que reciba una edad y devuelva:
 // 'Niño' si ≤12, 'Adolescente' si 13-17, 'Adulto' si 18-64, 'Adulto mayor' si ≥65
+
+function clasificarEdad(edad) {
+  if (edad <= 12) {
+    return "Niño";
+  } else if (edad >= 13 && edad <= 17) {
+    return "Adolescente";
+  } else if (edad >= 18 && edad <= 64) {
+    return "Adulto";
+  } else if (edad >= 65) {
+    return "Adulto mayor";
+  }
+}
+
 // Datos de prueba:
 console.log(clasificarEdad(10)); // Debería mostrar: 'Niño'
 console.log(clasificarEdad(15)); // Debería mostrar: 'Adolescente'
