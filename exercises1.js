@@ -330,7 +330,7 @@ const esMultiploDe5 = (n) => {
 // Datos de prueba:
 console.log(esMultiploDe5(10)); // Debería mostrar: true
 console.log(esMultiploDe5(7));  // Debería mostrar: false
-*/
+
 console.log("\nEjercicio 24: Arrow functions");
 // Convertir función tradicional en arrow function 'sumarDos'
 const sumarDos = (n) => {
@@ -338,9 +338,18 @@ const sumarDos = (n) => {
 }
 // Datos de prueba:
 console.log(sumarDos(5)); // Debería mostrar: 7
-
+*/
 console.log("\nEjercicio 25: Funciones como argumentos");
 // Crear función 'aplicarOperacionAvanzada' que reciba dos números y una función
+
+function multiplicar(a, b) {
+    return a * b;
+}
+
+function aplicarOperacionAvanzada(a, b, funcion) {
+    return funcion(a, b)
+}
+
 // Datos de prueba:
 console.log(aplicarOperacionAvanzada(3,4,multiplicar)); // Debería mostrar: 12
 
