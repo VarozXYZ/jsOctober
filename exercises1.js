@@ -245,20 +245,28 @@ const mayus = palabras.map(p => p.toUpperCase())
 // Datos de prueba:
 console.log(mayus);
 // Debería mostrar: ['HOLA', 'MUNDO', 'JS']
-*/
+
 console.log("\nEjercicio 18: map con objetos");
 // Utiliza map para crear un array con los salarios de los empleados
-const empleados = [
-  { nombre: 'Luis', salario: 1200 },
-  { nombre: 'Eva', salario: 1500 },
-];
+
 const edades = empleados.map(e => e.salario)
 // Datos de prueba:
 console.log(edades);
 // Debería mostrar: [1200, 1500]
-
+*/
 console.log("\nEjercicio 19: Combinación map + forEach");
+const empleados = [
+  { nombre: 'Luis', salario: 1200 },
+  { nombre: 'Eva', salario: 1500 },
+];
 // Primero usa map para obtener salarios y luego forEach para sumarlos
+const salarios = empleados.map(e => e.salario)
+let sumaTotal = 0;
+salarios.forEach(s => {
+    sumaTotal += s;
+})
+console.log("Los salarios son:", salarios);
+console.log("La suma total de los salarios es:", sumaTotal);
 // Datos de prueba:
 // Salarios: 1200, 1500
 // Debería imprimir:
