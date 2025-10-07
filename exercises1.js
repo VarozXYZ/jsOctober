@@ -272,7 +272,7 @@ console.log("La suma total de los salarios es:", sumaTotal);
 // Debería imprimir:
 // Las edades son: [1200,1500]
 // La suma de todas las edades es: 2700
-*/
+
 // ------------------------------
 // FUNCIONES
 // ------------------------------
@@ -289,9 +289,25 @@ const modulo = function (a, b) {
 // Datos de prueba:
 console.log(restar(10,3)); // Debería mostrar: 7
 console.log(modulo(10,3)); // Debería mostrar: 1
-
+*/
 console.log("\nEjercicio 21: Métodos");
 // Crear objeto 'banco' con métodos depositar, retirar y consultarSaldo
+
+const banco = {
+    saldo: 1000,
+    depositar(n) {
+        this.saldo += n;
+        return this.saldo;
+    },
+    retirar(n) {
+        this.saldo -= n;
+        return this.saldo;
+    },
+    consultarSaldo() {
+        return this.saldo;
+    }
+}
+
 // Datos de prueba:
 console.log(banco.depositar(500)); // Debería mostrar: 1500
 console.log(banco.retirar(200));   // Debería mostrar: 1300
