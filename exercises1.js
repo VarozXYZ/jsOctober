@@ -352,7 +352,7 @@ function aplicarOperacionAvanzada(a, b, funcion) {
 
 // Datos de prueba:
 console.log(aplicarOperacionAvanzada(3,4,multiplicar)); // Debería mostrar: 12
-*/
+
 console.log("\nEjercicio 26: Closure simple");
 // Crear función 'generadorDeID' que devuelva IDs incrementales
 
@@ -376,6 +376,7 @@ console.log("\nEjercicio 27: Closure con configuración");
 // Datos de prueba:
 console.log(contarDesde5()); // Debería mostrar: 6
 console.log(contarDesde5()); // Debería mostrar: 7
+*/
 
 // ------------------------------
 // EJERCICIOS COMBINADOS
@@ -383,6 +384,17 @@ console.log(contarDesde5()); // Debería mostrar: 7
 
 console.log("\nEjercicio 28: Condicional + bucle");
 // Crear función 'imprimirMultiplos' que reciba n y límite e imprima múltiplos de n
+
+function imprimirMultiplos(n, l) {
+    let i = 1;
+    let current = 0;
+    while (current < l) {
+        current = n * i;
+        console.log(current);
+        i++;
+    }
+}
+
 // Datos de prueba:
 imprimirMultiplos(3,15);
 // Debería imprimir: 3 6 9 12 15
