@@ -289,7 +289,7 @@ const modulo = function (a, b) {
 // Datos de prueba:
 console.log(restar(10,3)); // Debería mostrar: 7
 console.log(modulo(10,3)); // Debería mostrar: 1
-*/
+
 console.log("\nEjercicio 21: Métodos");
 // Crear objeto 'banco' con métodos depositar, retirar y consultarSaldo
 
@@ -312,9 +312,12 @@ const banco = {
 console.log(banco.depositar(500)); // Debería mostrar: 1500
 console.log(banco.retirar(200));   // Debería mostrar: 1300
 console.log(banco.consultarSaldo());// Debería mostrar: 1300
-
+*/
 console.log("\nEjercicio 22: Parámetros por defecto");
 // Crear función 'multiplicarPor' con factor por defecto = 2
+const multiplicarPor = (a, b=2) => {
+    return a * b;
+}
 // Datos de prueba:
 console.log(multiplicarPor(5));    // Debería mostrar: 10
 console.log(multiplicarPor(5,3));  // Debería mostrar: 15
