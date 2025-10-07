@@ -253,7 +253,7 @@ const edades = empleados.map(e => e.salario)
 // Datos de prueba:
 console.log(edades);
 // Debería mostrar: [1200, 1500]
-*/
+
 console.log("\nEjercicio 19: Combinación map + forEach");
 const empleados = [
   { nombre: 'Luis', salario: 1200 },
@@ -272,13 +272,20 @@ console.log("La suma total de los salarios es:", sumaTotal);
 // Debería imprimir:
 // Las edades son: [1200,1500]
 // La suma de todas las edades es: 2700
-
+*/
 // ------------------------------
 // FUNCIONES
 // ------------------------------
 
 console.log("\nEjercicio 20: Tipos de funciones");
 // Crear función declarativa 'restar' y expresión 'modulo'
+function restar(a, b) {
+    return a - b;
+}
+
+const modulo = function (a, b) {
+    return a % b;
+}
 // Datos de prueba:
 console.log(restar(10,3)); // Debería mostrar: 7
 console.log(modulo(10,3)); // Debería mostrar: 1
