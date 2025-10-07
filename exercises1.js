@@ -215,7 +215,7 @@ nombres.forEach((n, i) => {
 // Nombre en índice 0: Ana
 // Nombre en índice 1: Juan
 // Nombre en índice 2: María
-*/
+
 console.log("\nEjercicio 15: forEach con objetos");
 // Utiliza forEach para imprimir el nombre y salario de cada empleado en el array 'empleados'
 // Datos de prueba:
@@ -229,9 +229,11 @@ empleados.forEach(e => {
 // Debería imprimir:
 // Luis gana 1200 euros
 // Eva gana 1500 euros
-
+*/
 console.log("\nEjercicio 16: map básico");
 // Utiliza map para crear un nuevo array con el cubo de cada número del array 'numeros'
+const numeros = [1, 2, 3, 4, 5];
+const cubos = numeros.map(n => n**3)
 // Datos de prueba:
 console.log(cubos);
 // Debería mostrar: [1, 8, 27, 64, 125]
