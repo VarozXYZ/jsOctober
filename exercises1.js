@@ -321,7 +321,7 @@ const multiplicarPor = (a, b=2) => {
 // Datos de prueba:
 console.log(multiplicarPor(5));    // Debería mostrar: 10
 console.log(multiplicarPor(5,3));  // Debería mostrar: 15
-*/
+
 console.log("\nEjercicio 23: Funciones que retornan valores");
 // Crear función 'esMultiploDe5'
 const esMultiploDe5 = (n) => {
@@ -330,9 +330,12 @@ const esMultiploDe5 = (n) => {
 // Datos de prueba:
 console.log(esMultiploDe5(10)); // Debería mostrar: true
 console.log(esMultiploDe5(7));  // Debería mostrar: false
-
+*/
 console.log("\nEjercicio 24: Arrow functions");
 // Convertir función tradicional en arrow function 'sumarDos'
+const sumarDos = (n) => {
+    return n + 2;
+}
 // Datos de prueba:
 console.log(sumarDos(5)); // Debería mostrar: 7
 
