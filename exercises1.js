@@ -312,7 +312,7 @@ const banco = {
 console.log(banco.depositar(500)); // Debería mostrar: 1500
 console.log(banco.retirar(200));   // Debería mostrar: 1300
 console.log(banco.consultarSaldo());// Debería mostrar: 1300
-*/
+
 console.log("\nEjercicio 22: Parámetros por defecto");
 // Crear función 'multiplicarPor' con factor por defecto = 2
 const multiplicarPor = (a, b=2) => {
@@ -321,9 +321,12 @@ const multiplicarPor = (a, b=2) => {
 // Datos de prueba:
 console.log(multiplicarPor(5));    // Debería mostrar: 10
 console.log(multiplicarPor(5,3));  // Debería mostrar: 15
-
+*/
 console.log("\nEjercicio 23: Funciones que retornan valores");
 // Crear función 'esMultiploDe5'
+const esMultiploDe5 = (n) => {
+    return n % 5 === 0;
+}
 // Datos de prueba:
 console.log(esMultiploDe5(10)); // Debería mostrar: true
 console.log(esMultiploDe5(7));  // Debería mostrar: false
