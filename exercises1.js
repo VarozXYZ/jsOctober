@@ -1,5 +1,3 @@
-/*
-
 // Ejercicios de estructuras de control, bucles, funciones y forEach y map
 
 // ==============================
@@ -413,7 +411,7 @@ function filtrarPares(arr) {
 
 // Datos de prueba:
 console.log(filtrarPares([1,2,3,4,5,6])); // Debería mostrar: [2,4,6]
-*/
+
 
 console.log("\nEjercicio 30: Objeto + map + función");
 // Crear función 'promediarEdades' que devuelva el promedio de edades de un array de personas
