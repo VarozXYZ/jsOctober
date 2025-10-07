@@ -338,7 +338,7 @@ const sumarDos = (n) => {
 }
 // Datos de prueba:
 console.log(sumarDos(5)); // Debería mostrar: 7
-*/
+
 console.log("\nEjercicio 25: Funciones como argumentos");
 // Crear función 'aplicarOperacionAvanzada' que reciba dos números y una función
 
@@ -352,9 +352,20 @@ function aplicarOperacionAvanzada(a, b, funcion) {
 
 // Datos de prueba:
 console.log(aplicarOperacionAvanzada(3,4,multiplicar)); // Debería mostrar: 12
-
+*/
 console.log("\nEjercicio 26: Closure simple");
 // Crear función 'generadorDeID' que devuelva IDs incrementales
+
+function generadorDeID() {
+    let idCount = 0;
+    return function() {
+        idCount++;
+        return idCount;
+    }
+}
+
+const nuevoID = generadorDeID();
+
 // Datos de prueba:
 console.log(nuevoID()); // Debería mostrar: 1
 console.log(nuevoID()); // Debería mostrar: 2
