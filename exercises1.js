@@ -203,7 +203,7 @@ console.log("\nEjercicio 13: forEach básico");
 const numeros = [1, 2, 3, 4, 5];
 numeros.forEach(num => console.log(num**2));
 // Debería imprimir: 1 4 9 16 25
-*/
+
 console.log("\nEjercicio 14: forEach con índice");
 // Utiliza forEach para imprimir cada nombre del array 'nombres' con su índice
 // Datos de prueba:
@@ -215,7 +215,7 @@ nombres.forEach((n, i) => {
 // Nombre en índice 0: Ana
 // Nombre en índice 1: Juan
 // Nombre en índice 2: María
-
+*/
 console.log("\nEjercicio 15: forEach con objetos");
 // Utiliza forEach para imprimir el nombre y salario de cada empleado en el array 'empleados'
 // Datos de prueba:
@@ -223,7 +223,9 @@ const empleados = [
   { nombre: 'Luis', salario: 1200 },
   { nombre: 'Eva', salario: 1500 },
 ];
-
+empleados.forEach(e => {
+    console.log(`${e.nombre} gana ${e.salario} euros`)
+})
 // Debería imprimir:
 // Luis gana 1200 euros
 // Eva gana 1500 euros
