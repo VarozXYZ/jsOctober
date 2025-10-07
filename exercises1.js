@@ -237,7 +237,7 @@ const cubos = numeros.map(n => n**3)
 // Datos de prueba:
 console.log(cubos);
 // Debería mostrar: [1, 8, 27, 64, 125]
-*/
+
 console.log("\nEjercicio 17: map con strings");
 // Utiliza map para crear un nuevo array con las palabras en mayúsculas
 const palabras = ["hola", "mundo", "js"];
@@ -245,9 +245,14 @@ const mayus = palabras.map(p => p.toUpperCase())
 // Datos de prueba:
 console.log(mayus);
 // Debería mostrar: ['HOLA', 'MUNDO', 'JS']
-
+*/
 console.log("\nEjercicio 18: map con objetos");
 // Utiliza map para crear un array con los salarios de los empleados
+const empleados = [
+  { nombre: 'Luis', salario: 1200 },
+  { nombre: 'Eva', salario: 1500 },
+];
+const edades = empleados.map(e => e.salario)
 // Datos de prueba:
 console.log(edades);
 // Debería mostrar: [1200, 1500]
