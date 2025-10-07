@@ -376,7 +376,6 @@ console.log("\nEjercicio 27: Closure con configuración");
 // Datos de prueba:
 console.log(contarDesde5()); // Debería mostrar: 6
 console.log(contarDesde5()); // Debería mostrar: 7
-*/
 
 // ------------------------------
 // EJERCICIOS COMBINADOS
@@ -398,9 +397,21 @@ function imprimirMultiplos(n, l) {
 // Datos de prueba:
 imprimirMultiplos(3,15);
 // Debería imprimir: 3 6 9 12 15
+*/
 
 console.log("\nEjercicio 29: Array + condicional");
 // Crear función 'filtrarPares' que devuelva solo los números pares de un array
+
+function filtrarPares(arr) {
+    const arrFiltrado= [];
+    arr.forEach(n => {
+        if (n % 2 === 0) {
+            arrFiltrado.push(n)
+        }
+    })
+    return arrFiltrado
+}
+
 // Datos de prueba:
 console.log(filtrarPares([1,2,3,4,5,6])); // Debería mostrar: [2,4,6]
 
